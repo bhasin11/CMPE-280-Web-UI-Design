@@ -22,6 +22,5 @@ In this section, you can find different assignments completed throughout semeste
 | Description   | Solution |
 |------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | <b>HTML5 MARK-DATALIST SCORM - SCOs</b>  <br>  The goal of the assignment is to create Shareable Content Objects (SCOs) using HTML5 technologies. As part of the exercise, you will be creating three types of question SCOs: A) Math SCO, b) English SCO, and C) Audio/Video SCO.               | [Click](https://github.com/bhasin11/CMPE-280-Web-UI-Design/tree/master/Assignment-HTML5-MARK-DATALIST-SCORM-SCOs)
-
-
+| <b>Local Storage - HTML5 MARK-DATALIST SCORM - SCOs</b>  <br>  Learning Objective: using local storage technique, extend HTML5 MARK-DATALIST SCORM - SCOs exercise to store data on local storage.               | [Click](https://github.com/bhasin11/CMPE-280-Web-UI-Design/tree/master/Assignment-Local%20Storage-HTML5-MARK-DATALIST-SCORM-SCOs)
 
