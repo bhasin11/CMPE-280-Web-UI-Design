@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div class="test">
+	
+</div>
+<header class="header">Survey</header>
+
+<div class="numbers">
+	<p>1</p>
+	<p>2</p>
+	<p>3</p>
+	<p>4</p>
+	<div class="question-passive-survey">Survey</div>
+	<div class="question-passive-xx">Summary</div>
+</div>
+
+<div class="a">
+	<div class="survey">
+		<div class="text"><p>How did you like the center ?</p></div>
+	</div>
+	<div class="comments">
+		<p>Comments:</p>
+		<textarea rows="4" cols="50" class="textbox" id="30"></textarea>
+	</div>
+	<div class="location">
+		<p>Select Text Area Location:</p>
+		<div class="city">
+			<p>City: </p>
+		    <input list="city" name="browser" class="citytext">
+			<datalist id="city">
+			    <option value="San Jose">
+			    <option value="San Fransisco">
+			    <option value="Mountain View">
+			    <option value="Palo Alto">
+			    <option value="Sunnyvale">
+			</datalist>
+			<p>Room Number:</p>
+			<input list="rooms" name="browser" class="citytext" class="citytext">
+
+			<datalist id="rooms">
+			    <option value="Room 101">
+			    <option value="Room 102">
+			    <option value="Room 103">
+			    <option value="Room 104">
+			    <option value="Room 105">
+			</datalist>
+			<p id="missing">Please fill all the fields.</p>
+			
+		</div>
+	</div>
+	<div class="buttons">
+		
+	<button onclick="surveyNext()">Submit and Get Score</button>
+	<button onclick="surveySkip()">Skip and Get Score</button>
+	</div>
+</div>
+
+
+	
+<footer class="footer">&copy;&nbsp;Online Exam</footer>
+
+</body>
+</html>
