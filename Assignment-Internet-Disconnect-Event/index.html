@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="script/script.js"></script>
+</head>
+<body onload="checkData()">
+<div class="status">
+	<p id="status"></p>
+</div>
+
+<div class="frame">
+	<div class="tips">
+		<h3>Evaluation Tips</h3>
+		<ul>
+			<li>Type a question and press "Add Question"</li><br>
+			<li>If internet is connected, your question will be displayed in Sent Questions. Else your question will be displayed in pending questions.</li><br>		
+			<li>When we connect to internet, all pending questions are automatically moved to Sent Questions list.</li><br>
+			<li>Special Messages are also dislayed when network connectivity status changes at the top of the screen.</li><br>
+			<li>Pending Questions persist even when page is reloaded.</li>
+		</ul>
+
+	</div>
+	<div class="right">
+		<div class="question">
+		Ask a Question:<br>
+			<input type="text" id="question" class="inp" required>
+			<div class="tip"><p id="tip">Please enter a question</p></div>
+			<br>
+			<input type="submit" value="Ask Question" onclick="askquestion()">
+		</div>
+		<div class="offline">
+			<h3>Pending Questions</h3>
+			<p id="offline"></p>
+		</div>
+		<div class="online">
+			<h3>Sent Questions</h3>
+			<p id="online"></p>
+		</div>
+	</div>
+</div>
+</body>
+</html>

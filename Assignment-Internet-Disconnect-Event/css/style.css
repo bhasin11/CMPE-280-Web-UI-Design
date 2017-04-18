@@ -1,0 +1,113 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #f9f9f9;
+}
+
+.status{
+	text-align: center;
+	position: relative;
+	height: 40px;
+	max-height: 40px;
+	margin-bottom: 30px;
+}
+
+#status{
+	margin: 0;
+	display: none;
+}
+
+.frame{
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	height: 600px;
+	position: absolute;
+}
+
+.tips{
+	height: 100%;
+	max-height: 100%;
+	margin: 0;
+	float: left;
+	width: 30%;
+	max-width: 30%;
+	background-color: #93ebf2;
+	padding-right: 1%;
+}
+
+.tips h3{
+	text-align: center;
+}
+
+.right{
+	height: inherit;
+	margin: 0;
+	float: left;
+	width: 67%;
+	background-color: #ffffcc;
+}
+
+.tip{
+	display: block;
+	color: red;
+	height: 20px;
+	max-height: 20px;
+}
+
+#tip{
+	display: none;
+	color: red;
+	margin:0;
+}
+
+.question{
+	height: 23.1%;
+	max-height: 30%;
+	margin: 0;
+	width: 100%;
+	background-color: #ffffcc;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 6%;
+}
+
+.inp{
+	width: 50%;
+	height: 15%;
+}
+
+
+.offline{
+	height: 69%;
+	margin: 0;
+	float: left;
+	width: 50%;
+	background-color: #ffcccc;
+}
+
+.offline h3{
+	text-align: center;
+}
+
+.online{
+	height: 69%;
+	margin: 0;
+	float: left;
+	width: 50%;
+	background-color: #ccffe9;
+}
+
+.online h3{
+	text-align: center;
+}
+
+#offline{
+	margin: 0;
+	padding: 10px;
+}
+
+#online{
+	margin: 0;
+	padding: 10px;
+}
