@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registeration Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="script/script.js"></script>
+	<script src="https://use.fontawesome.com/65a9174c6a.js"></script>
+</head>
+<body>
+<div class="heading">
+	<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+Registration</div>
+
+<table class="fieldstable">
+	<tr>
+		<td class="title">User ID</td>
+		<td>&nbsp;<input type="text" class="textfield" name="userid" id="userid" required></td>
+	</tr>
+	<tr>
+		<td class="title">Password</td>
+		<td>
+		<table class="innertable">
+			<tr>
+				<td>
+					<input type="text" name="password" class="textfield" id="pass" onfocus="tips()" onblur="tipsReverse()" oninput="checkPassword()" required>
+				</td>
+				<td id="paragraph" class="paragraph">
+					<p>Must be between 7-20 characters in length and include 4 aplha characters; 1 numeric character (0, 9) or 1 special character (!,-,_,.). The password is case sensitive and must not contain spaces or be the same as your User ID.</p>
+				</td>
+
+				<td class="tips" id="tips">
+					<p>Password Strength</p>
+					<div class="inner">
+						<p id="upper">1 upper-case letter</p>
+						<p id="lower">1 lower-case letter</p>
+						<p id="number">1 number</p>
+						<p id="length">8 or more characters</p>
+						<p id="char">Uses only these English characters: A-z, 0-9, @, -, _ and .</p>
+						<p id="same">Your password can not be the same as your user ID.</p><br>
+						<p><b>Strength:</b></p>
+						<div class="progress">
+							<div class="current" id="current">
+								
+							</div>
+						</div>
+					</div>
+				</td>
+
+				<td class="invalid" id="invalid">Invalid Password</td>
+			</tr>
+		</table>
+	</tr>
+	<tr>
+		<td class="title">Verify Password</td>
+		<td>
+			<table>
+				<td><input type="text" class="textfield" id="verifypas" required onblur="validatePassword()" onkeyup="validatePassword()">
+				</td>
+				<td class="nomatch" id="nomatch">Password Doesn't Match.</td>	
+			</table>
+		</td>	
+	</tr>
+	<tr>
+		<td class="title">Email Address</td>
+		<td><input type="text" class="textfield" id="email" name="email" required></td>
+	</tr>
+	<tr>
+		<td class="title">Verify Email Address</td>
+		<td><input type="text" class="textfield" id="verifyemail" required></td>
+	</tr>
+	<tr>
+		<td class="title">Security Question</td>
+		<td>
+			<select id="question1" required>
+				<option value="">--</option>
+  				<option value="What is your mothers maiden name">What is your mothers maiden name</option>
+  				<option value="Who is your favourite hero">Who is your favourite hero</option>
+  				<option value="Where were you born">Where were you born</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">Security Answer</td>
+		<td><input type="text" class="textfield" id="answer1" required></td>
+	</tr>
+	<tr>
+		<td class="title">Security Question</td>
+		<td>
+			<select id="question2" required>
+				<option value="">--</option>
+  				<option value="What is your mothers maiden name">What is your mothers maiden name</option>
+  				<option value="Who is your favourite hero">Who is your favourite hero</option>
+  				<option value="Where were you born">Where were you born</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">Security Answer</td>
+		<td><input type="text" class="textfield" id="answer2" required></td>
+	</tr>
+	<tr>
+		<td class="title">Mobile</td>
+		<td><input type="text" class="textfield" id="mobile" name="mobile" required></td>
+	</tr>
+	<tr>
+		<td class="title">Address</td>
+		<td><textarea id="address" name="address" rows="4" cols="70" required></textarea></td>
+	</tr>
+	<tr>
+		<td class="title"></td>
+		<td>Areas you may be interested in, please select one or more:</td>
+	</tr>
+	<tr>
+		<td class="title"></td>
+		<td><textarea id="title" rows="6" name="areas" cols="70" class="textar" required></textarea></td>
+	</tr>
+	<tr>
+		<td class="title"></td>
+		<td class="bottom">
+                    <table>
+                      <tr>
+                        <td>
+          		    <input type="button" class="butt" value="Register" onclick="final()">
+	        	    <input type="button" class="butt" value="Cancel" onclick="rst()">
+                        </td>
+                        <td><div id="txtHint"></div></td>
+                      </tr>
+                   </table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
