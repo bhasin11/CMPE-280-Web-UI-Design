@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 600px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        
+        var uluru = [[{lat: 37.542571, lng: -121.993037}, 10000000],
+                     [{lat: 37.525400, lng: -122.037764}, 3000000],
+                     [{lat: 37.587546, lng: -122.066716}, 120000000],
+
+                     [{lat: 37.587546, lng: -122.066716}, 120000000],
+                     [{lat: 37.660284, lng: -122.089396}, 5000000],
+                     [{lat: 37.492686, lng: -122.249346}, 3002000],
+
+                     [{lat: 37.007888, lng: -122.067355}, 88999090],
+                     [{lat: 37.113164, lng: -121.651485}, 88999090],
+                     [{lat: 37.638625, lng: -121.911430}, 1000000],
+
+                     [{lat: 37.594870, lng: -122.473562}, 50000],
+                     [{lat: 36.995174, lng: -121.602745}, 50000],
+
+                     [{lat: 37.753038, lng: -122.423198}, 1000000],
+
+
+                     [{lat: 37.344717, lng: -121.979666}, 1000000],
+
+                     [{lat: 37.527798, lng: -122.312989}, 300000], 
+                     [{lat: 37.006852, lng: -122.064148}, 1000000]
+                    ];
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 9,
+          center: uluru[12][0]
+        });
+        var marker = "";
+
+        for(var i=0;i<15;i++){
+          marker = new google.maps.Marker({
+            position: uluru[i][0],
+            animation: google.maps.Animation.DROP,
+            map: map
+          });
+          if (i<11){
+            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+          }
+          else if(i == 11){
+            marker.setIcon(pinSymbol("#FFF"));
+          }
+          else if(i == 12){
+            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
+          }
+          else if(i == 13 || i == 14){
+
+            marker.setIcon('http://maps.google.com/mapfiles/ms/icons/red-dot.png');
+          }
+        }
+
+        for (i=0;i<11;i++) {
+          var circle = new google.maps.Circle({
+            strokeColor: '#64967d',
+            strokeOpacity: 0.8,
+            strokeWeight: 1,
+            fillColor: '#b0ecf4',
+            fillOpacity: 0.35,
+            map: map,
+            center: uluru[i][0],
+            radius: Math.sqrt(uluru[i][1]) * 2
+          });
+        }
+      }
+
+function pinSymbol(color) {
+    return {
+        path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
+        fillColor: color,
+        fillOpacity: 1,
+        strokeColor: '#000',
+        strokeWeight: 2,
+        scale: 1,
+   };
+}
+
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDcPwALh103uGlDrdPVD2xcKmA7BY5Weo&callback=initMap">
+    </script>
+  </body>
+</html>
