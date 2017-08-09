@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Socket Assignment</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<div class="top">
+	<p>CricScore</p>
+</div>
+
+<div class="second">
+	<div class="in">
+		<input type="button" value="Tune-In" id="in" onclick="begin()">
+	</div>
+	<div class="out">
+		<input type="button" value="Tune-Out" id="out" onclick="closing()">
+	</div>
+</div>
+
+<div class="heading">India vs Pakistan, 10th Match - Cricket World Cup 2011</div>
+<div class="toss" id="toss"></div>
+<div class="score" id="live">
+	
+</div>
+
+	<script type="text/javascript">
+		var socket = "";
+		var message = "";
+		var live = document.getElementById("live");
+		live.innerHTML = "";
+		var toss = document.getElementById("toss");
+		toss.innerHTML = "";
+		var i = 0, a = 0;
+		var s1 = "Match is live. It's Toss time.<br><br>";
+		var s2 = "";
+
+		
+		function begin(){
+			socket = new WebSocket("ws://localhost:8080/WebSocketAssignment/websocketendpoint");
+			
+			socket.onopen = function(){ open();};
+			socket.onclose = function(){ closed();};
+			socket.onmessage = function(message){ receive(message);};
+			socket.onerror = function(){ error();};
+		}
+		function open(){
+			toss.innerHTML = s1;
+			a = window.setInterval(function(){
+			  send();
+			}, 2000);
+		}
+		function closing(){
+			console.log('closing connection');
+			socket.close();
+		}
+		function receive(message){
+			if(i++ == 0){
+				s2 = "Match is live. <br>" + message.data;
+				toss.innerHTML = s2;
+			}
+			else{
+				var temp = live.innerHTML;
+				var parts = message.data.split("XXX");
+				
+				toss.innerHTML = s2 + "<br><b>" + parts[0] + "<b>";
+				
+				live.innerHTML = parts[1] + "<br><br>" + temp;
+			}
+		}
+		function error(){
+			live.value += "Error Encountered. Please try later. <br>" + live.innerHTML;
+		}
+		function send(){
+			socket.send("");
+		}
+		function closed(){
+			toss.innerHTML = 'Disconnected. Click "Tune-In" to reconnect.';
+			live.innerHTML = "";
+			i = 0;
+			clearInterval(a);
+		}
+	</script>
+</body>
+</html>
