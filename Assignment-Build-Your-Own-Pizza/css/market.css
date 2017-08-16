@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+.loginrow{
+    background:#62C192;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.trends{
+    height: 400px;
+    background-color: #62C192;
+    margin-left: 2%;
+}
+
+.mar10{margin-top:10px;}
+.mar15{margin-top:15px;}
+.mar20{margin-top:20px;}
+.mar30{margin-top:30px;}
+.mar40{margin-top:40px;}
+.mar50{margin-top:50px;}
+.mar60{margin-top:60px;}
+.mar70{margin-top:70px;}
+.mar80{margin-top:80px;}
+.mar90{margin-top:90px;}
+.mar100{margin-top:100px;}
+.mar170{margin-top:170px;}
+.mar200{margin-top:200px;}
+
+.loginrow img{
+    width:100px;
+}
+
+.phonenv, .phnav{
+    display:none;
+}
+
+.dname{
+    color:#fff;
+    font-weight:400;
+}
+
+.title{
+    color:#fff;
+    font-size:11px;
+    letter-spacing:1px;
+}
+
+.head{
+    background:#F5F5F5;
+    padding-bottom:10px;
+    padding-left:22px;
+}
+
+.head h2{
+    font-size:14px;
+}
+
+.marleft2{
+    margin-left:4%;
+}
+
+.product img{
+    width:100%;
+}
+
+.pddeets h3{
+    font-size:12px;
+    color:#457F5F;
+    letter-spacing:1px;
+    padding:0;
+    margin:0;
+}
+
+.pddeets p{
+    margin-bottom:20px;
+}
+
+.sidebar{
+    padding-top:30px;
+    padding-bottom:30px;
+    background:#62C192;
+}
+
+.sidebar img{
+    width:100px;
+}
+
+.nvv ul{
+    padding:0;
+}
+
+.nvv ul li{
+    list-style:none;
+    line-height:35px;
+}
+
+
+.nvv ul li a{
+    color:#fff;
+    font-size:11px;
+    letter-spacing:1px;
+}
+
+h2{
+    font-weight:300;
+    font-size:20px;
+    color:#62C192;
+    line-height:28px;
+    letter-spacing:1px;
+
+}
+
+p{
+    font-size:12px;
+    color:#999999;
+    line-height:24px;
+    font-weight:300;
+}
+
+.active{
+    background:#457F5F;
+    padding:5px 10px;
+}
+
+.btn3{
+    border:1px solid #62C192;
+    padding:8px 5%;
+    font-size:11px;
+    color:#62C192
+}
+
+.btn3:hover{
+    text-decoration:none;
+}
+
+.nopad{
+    padding:0;
+}
+
+@media(max-width:991px){
+
+    .x{
+        margin-top: 20px;
+    }
+    .x .col-md-2{
+        padding-left: 0;
+    }
+    .padleft0{
+        padding-left:15px;
+    }
+    .absimg{
+        display:none;
+    }
+    .nopadresponsive{
+        padding: 0;
+    }
+    .resmar10{
+        margin-top:10px;
+    }
+    .resmar15{
+        margin-top:15px;
+    }
+    .resmar20{
+        margin-top:20px;
+    }
+    .signin .col-md-2{
+        margin-left: 0;
+    }
+    .btn1{
+        padding: 2% 5%;
+        margin-bottom:10px;
+        margin-left: 0;
+    }
+    .btn2{
+        padding: 2% 5%;
+        margin-bottom:10px;
+    }
+    .forgot a{
+        font-size:12px;
+        color:#fff;
+    }
+
+    .mar170{
+        margin-top:10px;
+    }
+    .phonenv{
+        display:block;
+    }
+    .prp img{
+        width:40px;
+    }
+    .loginrow{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    
+    .product img{
+        width:40%;
+    }
+
+
+    .logo{
+        line-height:43px;
+    }
+    .menu{
+        margin-top:10px;
+    }
+    .menu img{
+        width:20px;
+        margin-top:5%;
+    }
+    .sidebar{
+        display:none;
+    }
+        .phnav{
+        background:#62C192;
+    }
+    .phnav ul {
+        padding:0;
+        margin:0;
+    }
+    .phnav ul li{
+        line-height:50px;
+        color:#fff;
+    }
+    .phnav ul li p{
+        color:#fff;
+    }
+    .phnav ul li a{
+        color:#fff;
+    }
+    .status{
+        width:100%;
+    }
+    .pddeets{
+        padding:0;
+        margin-top:20px;
+    }
+}

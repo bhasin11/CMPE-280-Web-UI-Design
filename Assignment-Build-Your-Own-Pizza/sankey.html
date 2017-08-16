@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Build Pizza</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/styleindex.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    </head>
+    <body onload="createsankey()">
+        <div class="container-fluid">
+            <div class="row head">
+                <div class="container">
+                    <div class="col-md-3">
+                        Pizza Place
+                    </div>
+                </div>
+            </div>
+       
+            <div class="container">
+              <form action="build.html">
+                  <div class="row">  
+                      <div class="col-md-5"></div>
+                      <div class="form-group row">
+                          <label class="col-form-label pizza">Dashboard</label>
+                      </div>
+                  </div>
+              </form>
+
+              <div class="chart" id="s" style="width: 800px; height: 450px;"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5"></div>
+            <button type="button" class="btn btn-primary order" onclick="clustermaps()">Proceed</button>
+        </div>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+  </body>
+</html>
