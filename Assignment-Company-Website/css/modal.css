@@ -1,0 +1,43 @@
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    /*border-radius: 15px;*/
+    text-align: center;
+    font-size: 140%;
+    letter-spacing: 1px;
+    
+}
+
+.head{
+    background-color: #64ABE7;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 5px;
+    color: white;
+}
+.body{
+    margin-top: 30px;
+}
+.linegap{
+   margin-top: 20px;
+}

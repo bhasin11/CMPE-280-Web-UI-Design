@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<link href="css/modal.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet"/>
+
+		<title>Home</title>
+	</head>
+
+<body>
+<body>
+<div class="container-fluid text-center">
+		<div class="text-center">
+
+			<nav class="navbar-default navbar-static top" margin-top="30px" role="navigation">
+			<div class="container-fluid">  
+				<a class="navbar-brand " href="index.html">RobotsStore</a>
+					<div class="collapse navbar-collapse navbar-right">  
+						<ul class="nav navbar-nav nav-tabs">
+							<li><a href="index.html">Home</a></li>
+							 <li class="dropdown">
+		                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+		                        <ul class="dropdown-menu">
+		                            <li>
+		                                <a href="robot1.html">Robot 1</a>
+		                            </li>
+		                            <li>
+		                                <a href="robot2.html">Robot 2</a>
+		                            </li>
+		                            <li>
+		                                <a href="robot3.html">Robot 3</a>
+		                            </li>
+		                        </ul>
+		                    </li>
+		                    <li class="dropdown">
+		                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+		                        <ul class="dropdown-menu">
+		                            <li>
+		                                <a href="management.html">Management</a>
+		                            </li>
+		                            <li>
+		                                <a href="code.html">Code of Conduct</a>
+		                            </li>
+		                            <li>
+		                                <a href="process.html">Business Process</a>
+		                            </li>
+		                            <li>
+		                                <a href="locations.html">Locations</a>
+		                            </li>
+		                            <li>
+		                                <a href="contactus.html">Contacts</a>
+		                            </li>
+		                        </ul>
+		                    </li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+					</div>
+			</div>
+			</nav>
+		</div>
+</div>
+<!--modal -->
+
+    <div id="download" class="modal">
+         <div class="modal-content" > 
+            <div><h1 class="head"> Download White Paper Modal</h1></div>
+            <div class="body">
+               <div class="row linegap">
+                <div class="col-sm-5 text-right">First Name : </div>
+                <div class="col-sm-7 text-left"><input type="text" name="fname" id="fname"></div>
+               </div> 
+               <div class="row linegap">
+                <div class="col-sm-5 text-right">Last Name : </div>
+                <div class="col-sm-7 text-left"><input type="text" name="Lname" id="lname"></div>
+               </div>
+               <div class="row linegap">
+                <div class="col-sm-5 text-right">Email : </div>
+                <div class="col-sm-7 text-left"><input type="email" name="email" id="email"></div>
+               </div>
+               <div class="row linegap">
+                 <a><button type="button" class="btn btn-primary btn-lg" onclick="validate()">Download</button></a>
+                 <button type="button" class="btn btn-primary btn-lg" onclick="closeDownload()">Cancel</button>
+               </div>
+	        </div>
+         	</div>	
+     </div>
+
+
+<!--end of download modal-->
+
+
+			
+
+
+<div class="container-fluid">
+  <div class="row">
+     <div class="col-sm-2">
+     	<a ><div class="Brochure"><h1>Brochure</h1></div></a>
+     	<a onclick="downloadModel()"><div class="WhitePaper"><h1>White Paper</h1></div></a>
+     </div>
+
+    <div  id="printableArea"  class="col-sm-8" style="text-align: center;">
+    		<h1>ROBOT 2</h1> 
+				<p style="text-align: justify;">
+					We provide latest robotic technology at your service. Robots are gradually becoming part of our lives.
+					 They provide comfort, pleasure and assistance in our activities. The depth to which we have started developing 
+					 robots in the recent years has been incredible and has been equally accpeted by the society.
+					We provide all kinds of robots including Personal, Domestic, Professional or Service Robots. 
+					Our products involve all kinds of robotic solution people would like to experience.
+					We always keep looking for better solutions and building more advanced robots than ever before.
+					 We have an awesome team of researchers who view challenges we face and try to build a robot which
+					  can provide a better or effecient solution to the current problem.
+				</p>
+				<img  src="img/2.jpg" alt="First slide">
+				<br> Our offering price
+				<div id="offer">
+					<div id="offer1">
+					  Get an excellent offer
+					</div>
+					<div id="offer2">
+					 Get an excellent offer
+					</div>
+				</div>
+     </div>
+     <div class="col-sm-2">
+        <div class="comment1"><h1>nice product</h1></div>
+     	<div class="comment2"><h1>nice product</h1></div>
+     </div>
+
+    </div>
+   </div>
+
+<footer class="site-footer" id="footer">
+  <div class="container">
+  	<div class="row">
+  		<div class="col-md-4"></div>
+  		<div class="col-md-4">
+			<ul class="nav navbar-nav" >
+				<li><a href="#"><i class="fa fa-facebook fa-3x" target="_blank"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus fa-3x" target="_blank"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter fa-3x" target="_blank"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube fa-3x" target="_blank"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram fa-3x" target="_blank"></i></a></li>
+			</ul>
+		</div>
+  		<div class="col-md-4"></div>
+	</div>
+ </div>
+</footer>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

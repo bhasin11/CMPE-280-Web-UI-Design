@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script type="text/javascript" src="js/script.js"></script>
+		  <link href="css/font-awesome.min.css" rel="stylesheet"/>
+		<title>Management</title>
+	</head>
+
+<body>
+<div class="container-fluid text-center">
+		<div class="text-center">
+
+			<nav class="navbar-default navbar-static top" margin-top="30px" role="navigation">
+			<div class="container-fluid">  
+				<a class="navbar-brand " href="index.html">RobotsStore</a>
+					<div class="collapse navbar-collapse navbar-right">  
+						<ul class="nav navbar-nav nav-tabs">
+							<li><a href="index.html">Home</a></li>
+							 <li class="dropdown">
+		                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+		                        <ul class="dropdown-menu">
+		                            <li>
+		                                <a href="robot1.html">Robot 1</a>
+		                            </li>
+		                            <li>
+		                                <a href="robot2.html">Robot 2</a>
+		                            </li>
+		                            <li>
+		                                <a href="robot3.html">Robot 3</a>
+		                            </li>
+		                        </ul>
+		                    </li>
+		                    <li class="dropdown">
+		                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+		                        <ul class="dropdown-menu">
+		                            <li>
+		                                <a href="management.html">Management</a>
+		                            </li>
+		                            <li>
+		                                <a href="code.html">Code of Conduct</a>
+		                            </li>
+		                            <li>
+		                                <a href="process.html">Business Process</a>
+		                            </li>
+		                            <li>
+		                                <a href="locations.html">Locations</a>
+		                            </li>
+		                            <li>
+		                                <a href="contactus.html">Contacts</a>
+		                            </li>
+		                        </ul>
+		                    </li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+					</div>
+			</div>
+			</nav>
+		</div>
+</div>
+
+
+
+<section id="learn_more">
+    <div class="container pad50">
+  		<div class="col-md-10 col-md-offset-1 text-center">
+			<h1>MANAGEMENT</h1> 
+			Visionary data scientists. Accomplished by industry veterans. Trusted Advisors. Proven Investors. OurCo is led by a world-class team that believes in data's potential to change the world. Our company is proud to be backed by Intel Capital, Investor Growth Capital (IGC), QuestMarker Partners, Goldman Sachs, TransLink Capital and other strategis investors.
+
+			<div class="row" style="margin-top: 50px;">
+				<div class="col-md-4">
+					<a onclick="show('0')">
+        				<img src="img/amit.jpg" width="250" heigth="252" alt="Image not available" class="image-responsive"/>
+        			</a>
+				</div>
+
+				<div class="col-md-4">
+					<a onclick="show('1')">
+        				<img src="img/gaurav.jpg" width="250" heigth="252" alt="Image not available" class="image-responsive"/>
+        			</a>
+				</div>
+
+				<div class="col-md-4">
+					<a onclick="show('2')">
+        				<img src="img/nitin.jpg" width="250" heigth="252" alt="Image not available" class="image-responsive"/>
+        			</a>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 50px;">
+				<div class="col-md-4">
+					<a onclick="show('3')">
+        				<img src="img/sid.jpg" width="250" heigth="252" alt="Image not available" class="image-responsive"/>
+        			</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="myModal" class="modal">
+		  <div class="modal-content">
+		    <span class="close" onclick="hide()">&times;</span>
+		    <h1>Personal Information</h1>
+
+		    <div class="row mdl">
+				<div class="col-md-6">
+					<a>
+        				<img id="photo" src="" width="250" heigth="252" alt="Image not available" class="image-responsive"/>
+        			</a>
+				</div>
+
+				<div class="col-md-6">
+					<table>
+						<tr>
+							<td>NAME</td>
+							<td id="mname"></td>
+						</tr>
+						<tr>
+							<td>EMAIL</td>
+							<td id="memail"></td>
+						</tr>
+						<tr>
+							<td>PHONE</td>
+							<td id="mphone"></td>
+						</tr>
+						<tr>
+							<td>Experience&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td id="mexp"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+		  </div>
+		</div>
+	</div>
+</section>
+
+
+<footer class="site-footer" id="footer1">
+  <div class="container">
+  	<div class="row">
+  		<div class="col-md-4"></div>
+  		<div class="col-md-4">
+			<ul class="nav navbar-nav" >
+				<li><a href="#"><i class="fa fa-facebook fa-3x" target="_blank"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus fa-3x" target="_blank"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter fa-3x" target="_blank"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube fa-3x" target="_blank"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram fa-3x" target="_blank"></i></a></li>
+			</ul>
+		</div>
+  		<div class="col-md-4"></div>
+	</div>
+ </div>
+</footer>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>
